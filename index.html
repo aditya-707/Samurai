@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Samurai | The Way of the Warrior</title>
+        <link rel="icon" href="assets/icon.webp" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Loader -->
+        <div class="loader">
+            <div class="loader-content">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path class="sword-path" d="M20,80 L80,20" stroke="#d4af37" stroke-width="2" fill="none"/>
+                    <path class="sword-path" d="M75,15 L85,25" stroke="#d4af37" stroke-width="2" fill="none"/>
+                    <path class="sword-path" d="M15,70 L30,85" stroke="#d4af37" stroke-width="2" fill="none"/>
+                </svg>
+                <p class="loader-text">侍の道 - The Way of Samurai</p>
+            </div>
+        </div>
+        
+        <!-- Header -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,10 C30,10 15,25 15,45 C15,65 30,80 50,80 C70,80 85,65 85,45 C85,25 70,10 50,10 Z M50,15 C67.5,15 80,27.5 80,45 C80,62.5 67.5,75 50,75 C32.5,75 20,62.5 20,45 C20,27.5 32.5,15 50,15 Z" />
+                        <path d="M40,35 L60,35 L60,40 L40,40 Z" />
+                        <path d="M45,30 L55,30 L55,60 L45,60 Z" />
+                    </svg>
+                    <span class="logo-text">SAMURAI</span>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#armor">Armor</a></li>
+                    <li><a href="#weapons">Weapons</a></li>
+                    <li><a href="#philosophy">Philosophy</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Hero Section -->
+            <section class="hero" id="home">
+                <div class="hero-content">
+                    <h1>The Way of the Warrior</h1>
+                    <p>Discover the legendary history of Japan's most honored warriors, their code of honor, and the profound impact they made on Japanese culture and society.</p>
+                    <a href="#history" class="cta-button">Begin Journey</a>
+                </div>
+            </section>
+            
+            <!-- 3D Model Section -->
+            <section class="model-section" id="armor">
+                <div class="model-container">
+                    <div class="text-box">
+                        <h2>Samurai Armor</h2>
+                        <p>The iconic armor of the samurai wasn't just for protection—it was a symbol of status and artistry. Each piece was meticulously crafted not only for battlefield functionality but also to inspire awe and intimidation.</p>
+                        <p>The typical samurai armor (gusoku) consisted of a helmet (kabuto), face mask (menpo), shoulder guards (sode), chest armor (do), and thigh guards (haidate). These components were often lacquered in vibrant colors and adorned with clan symbols (mon).</p>
+                        <p>Samurai armor evolved over centuries, reflecting changes in warfare tactics and technologies. Despite being made primarily of small metal plates laced together with silk or leather cords, the armor was surprisingly lightweight and allowed for considerable mobility.</p>
+                    </div>
+                    <div class="model-canvas" id="model-canvas"></div>
+                </div>
+            </section>
+            
+            <!-- Timeline Section -->
+            <section class="timeline-section" id="history">
+                <h2>Samurai Through the Ages</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">794-1185</div>
+                        <h3>Rise of the Samurai</h3>
+                        <p>During the Heian period, the samurai emerged as provincial warriors employed by the nobility to protect their estates and interests. The term "samurai" derives from the Japanese verb "saburau," meaning "to serve."</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">1185-1333</div>
+                        <h3>Kamakura Shogunate</h3>
+                        <p>The first samurai government was established by Minamoto no Yoritomo. The warrior class gained political power, marking the beginning of feudal Japan. Zen Buddhism began influencing samurai philosophy during this period.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">1333-1573</div>
+                        <h3>Muromachi Period</h3>
+                        <p>This era saw constant warfare between competing samurai clans. The Ōnin War (1467-1477) led to the Sengoku period or "Age of Warring States," with rapid development in weapons, tactics, and castle architecture.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">1573-1603</div>
+                        <h3>Azuchi-Momoyama Period</h3>
+                        <p>Japan began the process of unification under powerful daimyō Oda Nobunaga, and later Toyotomi Hideyoshi. Samurai armies grew larger, and European firearms transformed battle tactics.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">1603-1868</div>
+                        <h3>Edo Period</h3>
+                        <p>The Tokugawa Shogunate ushered in a 250-year period of peace. Samurai transformed from battlefield warriors to bureaucrats and administrators. The strict code of bushido was formalized during this time.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">1868-1877</div>
+                        <h3>Meiji Restoration</h3>
+                        <p>The samurai class was abolished during Japan's rapid modernization. The Sword Ban of 1876 prohibited wearing swords in public, effectively ending the samurai era. Many samurai rebelled, culminating in the Satsuma Rebellion of 1877.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Weapons Section -->
+            <section class="timeline-section" id="weapons">
+                <h2>Samurai Weaponry</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Katana</div>
+                        <h3>The Soul of the Samurai</h3>
+                        <p>The curved, single-edged sword became the symbol of the samurai spirit. Crafted through a process of folding steel thousands of times, the katana was revered as a work of art and considered the samurai's soul.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Wakizashi</div>
+                        <h3>The Companion Blade</h3>
+                        <p>Shorter than the katana, the wakizashi was worn together with the katana as the daisho pair. It was used for close-quarter combat and ritual suicide (seppuku).</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Tanto</div>
+                        <h3>The Dagger</h3>
+                        <p>This short dagger was used for stabbing attacks in close combat and as a utility knife. It was also the traditional tool for performing seppuku.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Yumi</div>
+                        <h3>The Long Bow</h3>
+                        <p>The asymmetrical Japanese longbow was the primary ranged weapon of the samurai before the introduction of firearms. Samurai were extensively trained in mounted archery (yabusame).</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Naginata</div>
+                        <h3>The Polearm</h3>
+                        <p>A long pole with a curved blade at the end, the naginata was effective against cavalry. It later became associated with women of samurai families, who used it to defend their homes.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Philosophy Section -->
+            <section class="timeline-section" id="philosophy">
+                <h2>Bushido: The Way of the Warrior</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">義 Gi</div>
+                        <h3>Righteousness</h3>
+                        <p>The samurai's decisions and actions had to be morally justified, fair, and honorable. A samurai made the right decision based on reason, even when faced with death.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">勇 Yu</div>
+                        <h3>Courage</h3>
+                        <p>Samurai displayed valor and fearlessness in battle. True courage was defined as doing what is right even when afraid.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">仁 Jin</div>
+                        <h3>Benevolence</h3>
+                        <p>Despite their martial prowess, samurai were expected to show compassion, kindness, and sympathy towards others, especially the weak and those in need.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">礼 Rei</div>
+                        <h3>Respect</h3>
+                        <p>A samurai showed respect to allies and enemies alike. Courtesy and proper etiquette were essential aspects of samurai life and training.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">誠 Makoto</div>
+                        <h3>Honesty</h3>
+                        <p>The samurai's word was his bond. They were expected to speak truthfully and without deception. A samurai never went back on his promise.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">名誉 Meiyo</div>
+                        <h3>Honor</h3>
+                        <p>A samurai's honor was his most precious possession and represented his entire life and decisions. Death was preferable to dishonor.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">忠義 Chugi</div>
+                        <h3>Loyalty</h3>
+                        <p>Unwavering loyalty to one's lord was paramount. A samurai was expected to serve his master faithfully, even unto death.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Audio Player -->
+        <div class="audio-player">
+            <button class="audio-toggle">
+                <i class="fas fa-music"></i>
+            </button>
+            <div class="audio-controls">
+                <div class="audio-info">
+                    <div class="audio-title">Samurai bg</div>
+                </div>
+                <input type="range" class="volume-slider" min="0" max="100" value="50">
+            </div>
+            <audio id="bg-audio" loop>
+                <source src="assets/bg-music.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,10 C30,10 15,25 15,45 C15,65 30,80 50,80 C70,80 85,65 85,45 C85,25 70,10 50,10 Z M50,15 C67.5,15 80,27.5 80,45 C80,62.5 67.5,75 50,75 C32.5,75 20,62.5 20,45 C20,27.5 32.5,15 50,15 Z" />
+                        <path d="M40,35 L60,35 L60,40 L40,40 Z" />
+                        <path d="M45,30 L55,30 L55,60 L45,60 Z" />
+                    </svg>
+                    <span class="logo-text">SAMURAI</span>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#armor">Armor</a></li>
+                    <li><a href="#weapons">Weapons</a></li>
+                    <li><a href="#philosophy">Philosophy</a></li>
+                </ul>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <p class="copyright">&copy; 2025 The Way of Samurai. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/GLTFLoader/2.0.0/GLTFLoader.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OrbitControls/2.0.0/OrbitControls.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
